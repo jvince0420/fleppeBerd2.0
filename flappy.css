@@ -1,0 +1,71 @@
+body {
+    background-color: skyblue;
+    text-align: center;
+    margin: 0;
+    
+}
+
+h1{
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.menu, #game-container {
+    text-align: center;
+    display: none;
+}
+
+.menu {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}
+
+.mechanics{
+    text-align: left;
+    font-size: 18px;
+}
+
+#game-mechanics{
+    margin: 15px;
+}
+.skillImg{
+    display: flex;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#backGround {
+    text-align: center;
+}
+
+#board {
+    background-color: skyblue;
+    background-image: url(./img/flappybirdbg.png);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adds a shadow for better visibility */
+}
+
+#dayNightToggle, #pipePrev, #pipeNext {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pipeColor {
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}

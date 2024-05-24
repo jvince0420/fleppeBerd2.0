@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird 2.0</title>
+    <link rel="stylesheet" href="/flappy.css">
+    <script src="/jQuery.js"></script>
+    <script src="/flappyJs.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Starting Front page-->
+    <div id="home-menu" class="menu">
+        <h1>Flappy Bird 2.0</h1>
+        <button id="startGame">Start Game</button>
+        <button id="showMechanics">Game Mechanics</button>
+        <button id="customizeGame">Customize</button>
+    </div>
+
+    <!-- inside of button GAME MECHANICS-->
+    <div id="game-mechanics" class="menu" style="display: none;">
+        <h1>Game Mechanics</h1>
+        <div class="mechanics">
+            <h3>1. Objectives:</h3>
+            <p>The objective of the game is to navigate a bird through a series of pipes without colliding with them. The longer the bird survives without colliding, the higher the score.</p>
+            <h3>2. Controls:</h3>
+            <p>• Jump: Spacebar or click to make the bird jump.</p>
+            <p>• Shield: Press "Q" to activate.</p>
+            <p>• Extra Life: Press "W" to activate.</p>
+            <p>• Invulnerability: Press "E" to activate.</p>
+            <h3>3. Skills:</h3>
+            <div class="skillImg">
+                <div class="shieldImg"><img src="/img/BirdShieldNoBg.png" alt=""></div>
+                <div class="reviveImg"><img src="/img/HeartWing-NOBG.png" alt=""></div>
+                <div class="invulImg"><img src="/img/stoned.png" alt=""></div>
+            </div>
+            <p>Shield - Cost 10 Spt</p>
+            <p>Revive - Cost 20 Spt</p>
+            <p>Invulnerability - Cpst 30 Spt</p>
+            <h3>4. Skill points</h3>
+            <p>• Skill points are randomly awarded after passing between 1 to 5 pipes.</p>
+
+        </div> 
+        <button id="goBackFromMechanics">Back</button>
+    </div>
+    
+    <!-- This where to costumize the color of the pipes and the day and night mode-->
+    <div id="customize-menu" class="menu" style="display: none;">
+        <h1>Customize Game</h1>
+        <p>Customization options...</p>
+        <button id="dayNightToggle">Mode</button>
+        <button id="pipePrev"><<-Prev</button>
+        <button id="pipeNext">Next->></button>
+        <button id="goBackFromCustomize">Back</button>
+    </div>
+
+    <!-- This is where the game begins-->
+    <div id="game-container" style="display: none;">
+        <h1>Flappy Bird 2.0</h1>
+        <div id="backGround">
+            <canvas id="board"></canvas>
+            <button id="exit">Back to menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
